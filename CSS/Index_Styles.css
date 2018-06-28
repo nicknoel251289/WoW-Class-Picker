@@ -146,7 +146,7 @@ main {
   justify-content: center;
 }
 .home_background {
-  background-image: url("../pictures/BFA_main_background.jpg");
+  background-image: url("../Pictures/BFA_main_background.jpg");
   background-size: cover;
   min-height: 100vh;
 }

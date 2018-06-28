@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Warcraft class picker</title>
+
+    <!--Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Amaranth:700|Anton|Leckerli+One|Montserrat+Alternates:700|Playfair+Display:400,700,900|Changa+One|Nunito:300|Passion+One|Pontano+Sans|Raleway:800|Roboto:700|Roboto:300|Titillium+Web:300|Alfa+Slab+One|Ubuntu|Hind|Permanent+Marker|Fjalla+One|IBM+Plex+Mono:700|Righteous|Titan+One" rel="stylesheet">
+
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="CSS/Index_Styles.css">
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <!--JS LINK-->
+    <script src="JS/Index_Script.js"></script>
+  </head>
+
+  <body>
+
+    <div class="side_nav" id="side_nav_content">
+        <a href="javascript:void(0)" class="close_button exit_button" id="close_button" onclick="close_nav()">&times;</a>
+        <a class="home clear_exit" href="../index.html">Main Page</a>
+        <a class="dk clear_exit" href="Class_Pages/death_knight.html">Death Knight</a>
+        <a class="dh clear_exit" href="Class_Pages/demon_hunter.html">Demon Hunter</a>
+        <a class="dr clear_exit" href="Class_Pages/druid.html">Druid</a>
+        <a class="hn clear_exit" href="Class_Pages/hunter.html">Hunter</a>
+        <a class="mg clear_exit" href="Class_Pages/mage.html">Mage</a>
+        <a class="mk clear_exit" href="Class_Pages/monk.html">Monk</a>
+        <a class="pa clear_exit" href="Class_Pages/paladin.html">Paladin</a>
+        <a class="pr clear_exit" href="Class_Pages/priest.html">Priest</a>
+        <a class="rg clear_exit" href="Class_Pages/rogue.html">Rogue</a>
+        <a class="sh clear_exit" href="Class_Pages/shaman.html">Shaman</a>
+        <a class="wl clear_exit" href="Class_Pages/warlock.html">Warlock</a>
+        <a class="wr clear_exit" href="Class_Pages/warrior.html">Warrior</a>
+      </div>
+
+
+
+    <main id="main">
+      <nav class="nav">
+        <div class="open_button" onclick="open_nav()">All Classes</div>
+      </nav>
+
+        <section id="section_1" class="home_background">
+          <div class="center_questions">
+            <div id="question_1_container" class="question_grid">
+              <h3 class="first_test_question">What armor type do you prefer?</h3>
+              <label for='cloth' class='button'><input name='armor_type' class='genre' type='radio' id='cloth'><div class='buttonTop'><span>Cloth</span></div></label>
+              <label for='leather' class='button'><input name='armor_type' class='genre' type='radio' id='leather'><div class='buttonTop'><span>Leather</span></div></label>
+              <label for='mail' class='button'><input name='armor_type' class='genre' type='radio' id='mail'><div class='buttonTop'><span>Mail</span></div></label>
+              <label for='plate' class='button'><input name='armor_type' class='genre' type='radio' id='plate'><div class='buttonTop'><span>Plate</span></div></label>
+            </div>
+            <div id="question_2_container" class="question_grid">
+              <h3 class="test_question">What persona do you prefer?</h3>
+              <label for='light' class='button'><input class='genre' name='persona_type' type='radio' id='light'><div class='buttonTop'><span>Light</span></div></label>
+              <label for='dark' class='button'><input class='genre' name='persona_type' type='radio' id='dark'><div class='buttonTop'><span>Dark</span></div></label>
+              <label for='elemental' class='button'><input class='genre' name='persona_type' type='radio' id='elemental'><div class='buttonTop'><span>Elemental</span></div></label>
+              <label for='nature' class='button'><input class='genre' name='persona_type' type='radio' id='nature'><div class='buttonTop'><span>Nature</span></div></label>
+              <label for='neutral' class='button'><input class='genre' name='persona_type' type='radio' id='neutral'><div class='buttonTop'><span>Neutral</span></div></label>
+            </div>
+            <div id="question_3_container" class="question_grid">
+              <h3 class="test_question">What role would you best suits you?</h3>
+              <label for='tank' class='button'><input class='genre' name='role_type' type='checkbox' id='tank'><div class='buttonTop'><span>Tank</span></div></label>
+              <label for='healer' class='button'><input class='genre' name='role_type' type='checkbox' id='healer'><div class='buttonTop'><span>Healer</span></div></label>
+              <label for='damage' class='button'><input class='genre' name='role_type' type='checkbox' id='damage'><div class='buttonTop'><span>Damage</span></div></label>
+            </div>
+            <div id="question_4_container" class="question_grid">
+              <h3 class="test_question">Bigger numbers or awesome animations?</h3>
+              <label for='numbers' class='button'><input class='genre' name='importance_type' type='checkbox' id='numbers'><div class='buttonTop'><span>Numbers</span></div></label>
+              <label for='animations' class='button'><input class='genre' name='importance_type' type='checkbox' id='animations'><div class='buttonTop'><span>Animations</span></div></label>
+            </div>
+            <div id="question_5_container" class="question_grid">
+              <h3 class="test_question">How do you prefer your spells?</h3>
+              <label for='physical' class='button'><input class='genre' name='damage_type' type='checkbox' id='physical'><div class='buttonTop'><span>Physical</span></div></label>
+              <label for='magic' class='button'><input class='genre' name='damage_type' type='checkbox' id='magic'><div class='buttonTop'><span>Magical</span></div></label>
+            </div>
+            <div id="question_6_container" class="question_grid">
+              <h3 class="last_test_question">What do you enjoy most, PvP, PvE, or both?</h3>
+              <label for='pvp' class='button'><input class='genre' name='environment_type' type='checkbox' id='pvp'><div class='buttonTop'><span>PvP</span></div></label>
+              <label for='pve' class='button'><input class='genre' name='environment_type' type='checkbox' id='pve'><div class='buttonTop'><span>PvE</span></div></label>
+            </div>
+            <div class="finish_button_container">
+              <div id="calculate" class="finish_button"><span>FINISH</span></div>
+            </div>
+          </div>
+        </seciton>
+
+    </main>
+
+  </body>
+
+</html>

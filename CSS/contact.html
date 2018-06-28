@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nick Noel Website</title>
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/Fancybox.css">
+
+    <!--Font Awesome -->
+    <link rel="stylesheet" href="web-fonts-with-css/css/fontawesome-all.min.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Amaranth:700|Anton|Playfair+Display:700,900|Sedgwick+Ave+Display|Cantarell|Bevan|Playfair+Display:400,700,900|Changa+One|Nunito:300|Passion+One|Pontano+Sans|Raleway:800|Roboto:700|Roboto:300|Titillium+Web:300|Alfa+Slab+One|Ubuntu|Hind|Permanent+Marker|Fjalla+One|IBM+Plex+Mono:700|Righteous|Titan+One" rel="stylesheet">
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="jquery.fancybox.min.js"></script>
+    <link href="jquery.fancybox.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    <!-- Fancybox enabled -->
+    <script type="text/javascript">
+    	$("[data-fancybox]").fancybox({
+    		protect: true
+    	});
+    </script>
+    <!-- JS links -->
+    <script src="Scripts/contact.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115488770-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-115488770-1');
+    </script>
+
+  </head>
+
+  <body>
+
+    <nav>
+      <div class="toggle">
+        <div class="menu"><i class="fas fa-bars"></i></div>
+      </div>
+      <ul><!--TRY MAKING THIS A DIV NAV BAR USING GRID-->
+        <li><a href="index.html" class="btn">Home</a></li>
+        <li><a href="caseStudies.html">Case Studies</a></li>
+        <li><a href="art.html">Art</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About Me</a></li>
+      </ul>
+    </nav>
+        <!-- <section class="contactbox">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdiHvD7D_TFT7cU2xEy3iXfJn5Wz7usrDmrVpmPDYJCQs9fKw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </section> -->
+    <main>
+      <section id="section-1">
+          <h1>Don't be shy!</h1>
+          <form class="formgrid" action="https://formcarry.com/s/Bk0RlQo9M" method="POST" accept-charset="UTF-8" onsubmit="alert('Thank you for contacting me!')">
+            <input class="emailinput" type="email" name="email" placeholder="Email *" required><!-- use this to reply visitors and prevent spam via akismet -->
+            <input class="phonenumberinput" type="number" name="phoneNumber" placeholder="Phone Number *" required>
+            <input class="firstnameinput" type="text" name="firstName" placeholder="First Name">
+            <input class="lastnameinput" type="text" name="lastName" placeholder="Last Name">
+            <textarea cols="40" rows="8" name="message" class="messageinput" placeholder="Message *" required></textarea>
+            <input class="submitinput" type="submit" value="Submit">
+          </form>
+          <div class="myInfo">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="myLocation">Located out of Manchester, CT, 06040</div>
+            <i class="far fa-envelope"></i>
+            <div class="myEmail">nicknoel251289@gmail.com</div>
+            <i class="fas fa-phone"></i>
+            <div class="myNumber">(413)-426-4799</div>
+            <p>
+              If you have any questions, work inquiries, or really anything else, feel free to get in touch anytime!
+            </p>
+            <div class="medias">
+              <a href="https://github.com/nicknoel251289" target="_blank" class="github"><i class="fab fa-github"></i></a>
+              <a href="https://www.instagram.com/nick_noel89/" target="_blank" class="ig"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/nicholas-noel-003ba059/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+      </section>
+
+
+      <div class="thankyou">
+        <p>Thank you for contacting!</p>
+        <button class="okay">Exit</button>
+      </div>
+
+      </main>
+
+    <footer id="footer" class="footerGrid">
+      <div>Projects by Nick Noel aka God Almighty</div>
+      <div>Facebook <a href="https://www.facebook.com/nick.noel.89" target="_blank">Nick Noel</a></div>
+    </footer>
+
+  </body>
+</html>

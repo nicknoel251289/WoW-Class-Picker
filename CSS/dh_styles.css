@@ -10,7 +10,6 @@ body {
   color: #190f08;
 }
 h2, h3, h4 {
-  font-family: semplicita pro, sans-serif;
   font-style: normal;
   weight: 600;
   color: #352011;
@@ -103,7 +102,7 @@ label {
 }
 .open_button {
   position: fixed;
-  left: 0px;
+  left: -30px;
   top: 0;
   background: #211510;
   color: #f8b700;
@@ -154,10 +153,7 @@ main {
   margin: 0 auto;
   align-self: center;
   color: #dddddd;
-  font-size: 3em;
-  font-family: Exocet OTCECY, serif;
-  font-family: And Then It Ends, serif;
-  font-family: Dark Waters, serif;
+  font-size: 2.5em;
 }
 .color_background {
   grid-row: 3/4;
@@ -225,6 +221,7 @@ main {
   overflow: hidden;
   display: grid;
   grid-template-columns: 50px 1fr;
+  box-shadow: 0px 3px 7px rgba(0,0,0,0.55), 0px 3px 9px rgba(0,0,0,0.45);
 }
 .spec img {
   grid-column: 1/2;

@@ -10,7 +10,6 @@ body {
   color: #190f08;
 }
 h2, h3, h4 {
-  font-family: semplicita pro, sans-serif;
   font-style: normal;
   weight: 600;
   color: #352011;
@@ -106,7 +105,7 @@ label {
 }
 .open_button {
   position: fixed;
-  left: 0px;
+  left: -30px;
   top: 0;
   background: #211510;
   color: #f8b700;
@@ -147,7 +146,7 @@ main {
   justify-content: center;
 }
 .home_background {
-  background-image: url("../pictures/druid_main_background.jpg");
+  background-image: url("../Pictures/shaman_main_background.jpg");
   background-size: cover;
   min-height: 100vh;
 }
@@ -157,21 +156,18 @@ main {
   margin: 0 auto;
   align-self: center;
   color: #dddddd;
-  font-size: 3em;
-  font-family: Exocet OTCECY, serif;
-  font-family: And Then It Ends, serif;
-  font-family: Dark Waters, serif;
+  font-size: 2.5em;
 }
 .color_background {
   grid-row: 3/4;
   grid-column: 2/3;
   display: grid;
   grid-template-rows: 40px 1fr;
-  background: #509822;
-  border: 1px solid #32461b;
+  background: linear-gradient(-45deg, #ff6a00, #442c91);
+  border: 1px solid #241f45;
   border-radius: 15px;
   opacity: .97;
-  box-shadow: 3px 0px 70px #8bdc1d, 0px 0px 30px rgba(0,0,0,0.75);
+  box-shadow: 3px 0px 70px #2ab393, 0px 0px 30px rgba(0,0,0,0.75);
 }
 .logo_background {
   width: 45%;
@@ -229,6 +225,7 @@ main {
   overflow: hidden;
   display: grid;
   grid-template-columns: 50px 1fr;
+  box-shadow: 0px 3px 7px rgba(0,0,0,0.55), 0px 3px 9px rgba(0,0,0,0.45);
 }
 .spec img {
   grid-column: 1/2;
@@ -260,7 +257,7 @@ main {
   }
   .class_info_container {
     display: grid;
-    grid-template-rows: 100px 50px 1fr 1.25fr;
+    grid-template-rows: 100px 50px 1fr .8fr;
     grid-template-columns: 1fr 1fr;
   }
   .class_info_container h2 {

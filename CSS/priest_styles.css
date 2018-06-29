@@ -10,7 +10,6 @@ body {
   color: #190f08;
 }
 h2, h3, h4 {
-  font-family: semplicita pro, sans-serif;
   font-style: normal;
   weight: 600;
   color: #352011;
@@ -106,7 +105,7 @@ label {
 }
 .open_button {
   position: fixed;
-  left: 0px;
+  left: -30px;
   top: 0;
   background: #211510;
   color: #f8b700;
@@ -147,7 +146,7 @@ main {
   justify-content: center;
 }
 .home_background {
-  background-image: url("../Pictures/paladin_main_background.jpg");
+  background-image: url("../Pictures/priest_main_background.jpg");
   background-size: cover;
   min-height: 100vh;
 }
@@ -157,21 +156,18 @@ main {
   margin: 0 auto;
   align-self: center;
   color: #dddddd;
-  font-size: 3em;
-  font-family: Exocet OTCECY, serif;
-  font-family: And Then It Ends, serif;
-  font-family: Dark Waters, serif;
+  font-size: 2.5em;
 }
 .color_background {
   grid-row: 3/4;
   grid-column: 2/3;
   display: grid;
   grid-template-rows: 40px 1fr;
-  background: #c1ac6a;
+  background: #f7f6e3;
   border: 1px solid #c3a680;
   border-radius: 15px;
   opacity: .97;
-  box-shadow: 3px 0px 70px #fcce39, 0px 0px 30px rgba(0,0,0,0.75);
+  box-shadow: 3px 0px 70px #f7f6e3, 0px 0px 30px rgba(0,0,0,0.75);
 }
 .logo_background {
   width: 45%;
@@ -261,7 +257,7 @@ main {
   }
   .class_info_container {
     display: grid;
-    grid-template-rows: 100px 50px 1fr .95fr;
+    grid-template-rows: 100px 50px 1fr 1.1fr;
     grid-template-columns: 1fr 1fr;
   }
   .class_info_container h2 {
